@@ -1,4 +1,4 @@
-import 'package:flutter_project/core/constants/cubit_state.dart';
+import 'package:{{name}}/core/constants/cubit_state.dart';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

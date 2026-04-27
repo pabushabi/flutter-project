@@ -1,4 +1,4 @@
-part of 'home_state.dart';
+part of 'home_cubit.dart';
 
 @freezed
 sealed class HomeState with _$HomeState {

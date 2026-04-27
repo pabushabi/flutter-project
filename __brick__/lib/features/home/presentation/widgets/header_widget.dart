@@ -6,15 +6,6 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 60,
-      child: const Center(
-        child: Text(
-          'Home',
-          style: Fonts.h1,
-          ),
-        ),
-      ),
-    );
+    return Center(child: Text('Home', style: Fonts.h1));
   }
 }
