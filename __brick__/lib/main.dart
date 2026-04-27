@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:{{name}}/core/application.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(App());
+  await ServiceLocator.init();
+
+  runApp(Application());
 }
