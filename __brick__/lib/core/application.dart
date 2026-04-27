@@ -4,13 +4,13 @@ import 'package:{{name}}/core/services/injection.dart';
 import 'package:{{name}}/core/ui_kit/palette.dart';
 import 'package:{{name}}/core/ui_kit/fonts.dart';
 import 'package:{{name}}/features/home/presentation/blocs/home_cubit.dart';
-import 'package:{{name}}/router/router.dart';
+import 'package:{{name}}/core/services/router.dart';
 
 class Application extends StatefulWidget {
-  const Application({Key? key}) : super(key: key);
+  const Application({super.key});
 
   @override
-  _ApplicationState createState() => _ApplicationState();
+  State<Application> createState() => _ApplicationState();
 }
 
 class _ApplicationState extends State<Application> {
