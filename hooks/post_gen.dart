@@ -1,5 +1,5 @@
 import 'package:mason/mason.dart';
-import 'packages:mason_hooks_flutter/mason_hooks_flutter.dart';
+import 'package:mason_hooks_flutter/mason_hooks_flutter.dart';
 
 void run(HookContext context) {
   addDependencies(context, dependencies: [
