@@ -5,4 +5,4 @@ environment:
 
 dependencies:
   mason: ^0.1.2
-  mason_hooks_flutter: ^0.1.2
+  mason_hooks_flutter: 0.0.25
