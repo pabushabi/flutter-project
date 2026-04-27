@@ -6,6 +6,8 @@ import 'package:{{name}}/core/ui_kit/fonts.dart';
 import 'package:{{name}}/features/home/presentation/blocs/home_cubit.dart';
 import 'package:{{name}}/core/services/router.dart';
 
+import 'ui_kit/palette.dart';
+
 class Application extends StatefulWidget {
   const Application({super.key});
 
@@ -17,13 +19,15 @@ class _ApplicationState extends State<Application> {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (context) => getIt<HomeCubit>()),
-      ],
+      providers: [BlocProvider(create: (context) => getIt<HomeCubit>())],
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          colorScheme: .fromSeed(seedColor: Palette.primary, brightness: .dark),
+          colorScheme: .fromSeed(
+            seedColor: Palette.primary,
+            brightness: .dark,
+            surface: Palette.bg,
+          ),
           textTheme: TextTheme(
             displayLarge: Fonts.h1,
             titleLarge: Fonts.h2,
